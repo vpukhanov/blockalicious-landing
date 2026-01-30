@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import screenshotMacOS from "./assets/screenshot-macos.png";
 import screenshotIOS from "./assets/screenshot-ios.png";
 
@@ -99,6 +100,12 @@ export default function Home() {
       <footer className="py-8 px-6 border-t border-border/50">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-end items-center gap-4 text-sm text-muted font-[family-name:var(--font-body)]">
           <div className="flex gap-6">
+            <Link
+              href="/privacy"
+              className="hover:text-foreground transition-colors"
+            >
+              Privacy
+            </Link>
             <a
               href="https://apps.apple.com/app/blockalicious/id1608665824"
               target="_blank"
